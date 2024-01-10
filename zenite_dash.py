@@ -96,7 +96,7 @@ if option_bet == 'Total de Gols':
             'Porcentagem de Sucesso (%)':f'{len(df2[df2.goals + df2.goals_opp > option_value])*100/len(df2):.0f}%'},
             {'Situação':f'{option_team2} Fora de Casa',
             'Sucesso/Partidas':f'A meta for batida {len(df2[(df2.goals + df2.goals_opp > option_value) & (df2.home == 0)])} vezes em {len(df2[df2.home == 0])} ocasiões',
-            'Porcentagem de Sucesso (%)':f'{len(df2[(df2.goals + df2.goals_opp > option_value) & (df2.home == 1)])*100/len(df2[df2.home == 1]):.0f}%'},    
+            'Porcentagem de Sucesso (%)':f'{len(df2[(df2.goals + df2.goals_opp > option_value) & (df2.home == 0)])*100/len(df2[df2.home == 0]):.0f}%'},    
         ]
     else:
         data_list = [
@@ -111,7 +111,7 @@ if option_bet == 'Total de Gols':
             'Porcentagem de Sucesso (%)':f'{len(df2[df2.goals + df2.goals_opp < option_value])*100/len(df2):.0f}%'},
             {'Situação':f'{option_team2} Fora de Casa',
             'Sucesso/Partidas':f'A meta for batida {len(df2[(df2.goals + df2.goals_opp < option_value) & (df2.home == 0)])} vezes em {len(df2[df2.home == 0])} ocasiões',
-            'Porcentagem de Sucesso (%)':f'{len(df2[(df2.goals + df2.goals_opp < option_value) & (df2.home == 1)])*100/len(df2[df2.home == 1]):.0f}%'},    
+            'Porcentagem de Sucesso (%)':f'{len(df2[(df2.goals + df2.goals_opp < option_value) & (df2.home == 0)])*100/len(df2[df2.home == 0]):.0f}%'},    
         ]        
 
 
